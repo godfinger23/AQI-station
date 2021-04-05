@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+    Table
+{% endblock %}
+
+{% block main %}
+    <table class= "table table-striped">
+        <thead>
+            <tr>
+                <th>County</th>
+                <th>Site</th>
+                <th>PM2.5 (mg/L)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in values %}
+            <tr>
+                <td>{{ i["county"] }}</td>
+                <td>{{ i["Site"] }}</td>
+                <td>{{ i["PM25"] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+{% endblock %}
