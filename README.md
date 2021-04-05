@@ -1,1 +1,1 @@
-My final project is using pandas to read the daily data from the Taiwan EPA opendata website. Further more, the data will be draw on the map by folium.
+This project is using request to read the daily data from the Taiwan EPA opendata website. Further more, the data will be storge in SQL.
